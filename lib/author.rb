@@ -26,5 +26,8 @@ class Author
     Post.all.select {|post| post.author == self}
   end 
   
-  def self.post_
+  def self.post_count
+    Post.all.post_count
+  end 
+end 
     
